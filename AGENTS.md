@@ -34,8 +34,8 @@ python rokomari/scrape.py
 
 ## Configuration (top of each `scrape.py`)
 - `HEADLESS = True` — `False` to watch the browser
-- `WAIT_TIME = 2` — seconds between actions
-- `MAX_PAGES_PER_PRODUCT = 3` — max review pages per product
+- `WAIT_TIME = 1` — seconds between actions
+- `MAX_PAGES_PER_PRODUCT = 3` — max review pages per product (lower = faster)
 - `SCRAPE_FORCE=1` env var — bypass already-scraped check
 
 ## CSS selectors are brittle

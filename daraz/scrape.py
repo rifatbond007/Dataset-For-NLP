@@ -45,9 +45,9 @@ from playwright.sync_api import sync_playwright
 # ===================== CONFIG (edit here if needed) =====================
 
 HEADLESS = True                 # True = hidden browser, False = visible
-WAIT_TIME = 2                   # Seconds to wait after each action
+WAIT_TIME = 1                   # Seconds to wait after each action
 MAX_PAGES_PER_PRODUCT = 3       # Max review pages to scrape per product
-INTER_URL_DELAY = 1             # Seconds to wait between URLs
+INTER_URL_DELAY = 0.5           # Seconds to wait between URLs
 SOURCE_NAME = "Daraz"           # Value written to the CSV 'source' column
 
 URLS_FILE = Path(__file__).resolve().parent / "urls.txt"
@@ -106,7 +106,7 @@ def go_to_next_page(page):
         if "disabled" in class_attr:
             return False
         next_btn.scroll_into_view_if_needed()
-        time.sleep(1)
+        time.sleep(WAIT_TIME)
         next_btn.click()
         time.sleep(WAIT_TIME)
         return True

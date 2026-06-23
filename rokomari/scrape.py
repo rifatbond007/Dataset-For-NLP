@@ -43,9 +43,9 @@ from playwright.sync_api import sync_playwright
 # ===================== CONFIG =====================
 
 HEADLESS = True
-WAIT_TIME = 2
+WAIT_TIME = 1
 MAX_PAGES_PER_PRODUCT = 3
-INTER_URL_DELAY = 1             # Seconds to wait between URLs
+INTER_URL_DELAY = 0.5           # Seconds to wait between URLs
 SOURCE_NAME = "Rokomari"
 
 URLS_FILE = Path(__file__).resolve().parent / "urls.txt"
@@ -175,7 +175,7 @@ def go_to_next_page(page):
             if "disabled" in class_attr:
                 continue
             btn.scroll_into_view_if_needed()
-            time.sleep(1)
+            time.sleep(WAIT_TIME)
             btn.click()
             time.sleep(WAIT_TIME)
             return True
