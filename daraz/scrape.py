@@ -46,7 +46,7 @@ from playwright.sync_api import sync_playwright
 
 HEADLESS = True                 # True = hidden browser, False = visible
 WAIT_TIME = 1                   # Seconds to wait after each action
-MAX_PAGES_PER_PRODUCT = 3       # Max review pages to scrape per product
+MAX_PAGES_PER_PRODUCT = 10       # Max review pages to scrape per product
 INTER_URL_DELAY = 0.5           # Seconds to wait between URLs
 SOURCE_NAME = "Daraz"           # Value written to the CSV 'source' column
 
