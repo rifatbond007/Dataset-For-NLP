@@ -1,0 +1,10 @@
+# প্রতি লাইনে একটি Daraz Bangladesh প্রোডাক্ট URL পেস্ট করুন।
+# '#' দিয়ে শুরু হওয়া লাইন কমেন্ট হিসেবে বাদ যাবে।
+# স্ক্রিপ্ট প্রতিটা URL-এ গিয়ে রিভিউ সংগ্রহ করবে, তারপর পরের URL-এ যাবে।
+
+https://www.daraz.com.bd/products/realme-c71-new-6gb128gb-smartphone-6300mah-battery-45w-fast-charge-120hz-display-ip64-dust-water-resistance-i531144210-s2549231467.html?pvid=dd4601ae-a0c9-4606-b35b-83f38f9f46ae&search=jfy&scm=1007.51705.481011.0&spm=a2a0e.tm80335411.just4u.d_531144210
+https://www.daraz.com.bd/products/realme-note-70-4128gb-67-90hz-display-6300-mah-massive-battery-135mp-camera-drop-water-resistance-i545526612-s2567649457.html?&search=pdp_v2v?spm=a2a0e.pdp_revamp.recommendation_2.2.4e691479uv3VR8&mp=1&scm=1007.38553.419544.0&clickTrackInfo=90be1635-13b6-4c33-b1d1-7c98419c3bce__545526612__3__hero_item_i2i__419526__0.0__0.03516247868537903__0.0__0.0__0.0__0.0__1____531144210__531144210__0.0________17999.0__0.11111728429357182__4.983050847457627__118__15999.0__2039294,2046863,2025827,2046861,2016393,2039299,1963322,2000274,2022276,2025498,2026768,2001477,2043502,2007259,2040529,2005100,2033693,2025052,2033991,2051488,1199863,2017702,12005____________32104____0.0__0.0__0.0__0.0____0.0____0.0__0.0__0.0____________0.0
+https://www.daraz.com.bd/products/-i465481081-s2235379999.html?pvid=38d85677-b6a6-42a0-8a20-0ae9b0604f11&search=jfy&scm=1007.51705.413671.0&spm=a2a0e.tm80335411.just4u.d_465481081
+https://www.daraz.com.bd/products/12v-9v-5v-15-i541369221-s2561087489.html?pvid=bd334f32-7360-4d37-ad8f-9c10da5d2bed&search=jfy&scm=1007.51705.477565.0&spm=a2a0e.tm80335411.just4u.d_541369221
+https://www.daraz.com.bd/products/-i188474208-s1135871506.html?pvid=53dd6700-e531-4f8c-b4c0-848030898164&search=jfy&scm=1007.51705.413671.0&spm=a2a0e.tm80335411.just4u.d_188474208
+https://www.daraz.com.bd/products/dove-shampoo-hairfall-rescue-650ml-i101522321-s1015530311.html?scm=1007.51610.379274.0&pvid=4b0b419c-78f5-4c16-9fac-f758fe0f8ce4&search=flashsale&spm=a2a0e.tm80335411.FlashSale.d_101522321
