@@ -1,12 +1,1 @@
-# প্রতি লাইনে একটি Rokomari প্রোডাক্ট URL পেস্ট করুন।
-# '#' দিয়ে শুরু হওয়া লাইন কমেন্ট হিসেবে বাদ যাবে।
-# স্ক্রিপ্ট প্রতিটা URL-এ গিয়ে রিভিউ সংগ্রহ করবে, তারপর পরের URL-এ যাবে।
-
-https://www.rokomari.com/book/154373/time-management
-https://www.rokomari.com/book/243389/dopamine-detox?hasEbook=on
-https://www.rokomari.com/book/425484/business-blueprint?hasEbook=on
-https://www.rokomari.com/book/257281/building-a-storybrand?hasEbook=on
-https://www.rokomari.com/book/227595/bangkbybostha-o-takar-gopon-rohosso?hasEbook=on
-https://www.rokomari.com/book/287484/reflections-from-surah-yusuf?ref=cat_ebook_1&hasEbook=on
-https://www.rokomari.com/book/287484/reflections-from-surah-yusuf?hasEbook=on
-https://www.rokomari.com/book/272671/quranic-reminder-1?hasEbook=on
+https://www.rokomari.com/book/198365/fera-2?ref=jfu_hm

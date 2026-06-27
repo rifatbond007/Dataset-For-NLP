@@ -44,7 +44,7 @@ from playwright.sync_api import sync_playwright
 
 HEADLESS = True
 WAIT_TIME = 1
-MAX_PAGES_PER_PRODUCT = 3
+MAX_PAGES_PER_PRODUCT = 20
 INTER_URL_DELAY = 0.5           # Seconds to wait between URLs
 SOURCE_NAME = "Rokomari"
 

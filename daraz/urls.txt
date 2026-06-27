@@ -1,6 +1,1 @@
-# প্রতি লাইনে একটি Daraz Bangladesh প্রোডাক্ট URL পেস্ট করুন।
-# '#' দিয়ে শুরু হওয়া লাইন কমেন্ট হিসেবে বাদ যাবে।
-# স্ক্রিপ্ট প্রতিটা URL-এ গিয়ে রিভিউ সংগ্রহ করবে, তারপর পরের URL-এ যাবে।
-
-
-https://www.daraz.com.bd/products/joy-super-jy-2218-professional-rechargeable-portable-mini-table-fan-strong-wind-left-to-right-oscillating-angle-45-degrees-acdc-i314175268-s1731668264.html?pvid=fcbd608c-1c64-40cf-ac2b-94a84beb9dc9&search=jfy&scm=1007.51705.413671.0&spm=a2a0e.tm80335411.just4u.d_314175268
+https://www.daraz.com.bd/products/1-i410846635-s2553434721.html?pvid=5e8361f2-a7d8-496c-b740-7f2dfbd48382&scm=1007.51705.477565.0&spm=a2a0e.tm80335411.just4u.d_410846635
