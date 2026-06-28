@@ -1,47 +1,41 @@
-# AGENTS.md — Multi-Site BD Review Scraper
+# AGENTS.md
 
-## Quick start
-```bash
-source venv/bin/activate
-pip install -r requirements.txt
-python -m playwright install chromium
+## What this repo is
 
-# Add URLs to daraz/urls.txt and/or rokomari/urls.txt, then:
-./run_all.sh                     # both sites (skips already-scraped URLs)
-./run_all.sh --force             # re-scrape everything
-./run_all.sh daraz               # only Daraz
-./run_all.sh --visible           # show browser for debugging
-./run_all.sh --install           # first-time: create venv + install deps + playwright
+190k synthetic text samples (English + Bangla) for emotion/sentiment/mental-health NLP research. No code, no build system, no tests — just 10 CSV files and a README.
+
+## Structure
+
+- **10 CSV files** in root, all with the same 3-column schema: `label,language,comment`
+- **emotion_comments_demo.csv** (70k rows, 7 labels) is the core dataset
+- **sentiment_love_depression_suicide.csv** (40k rows, 3 labels)
+- **suicide_bangla_1000.csv** (10k rows, 1 label — BN only)
+- **6 small files** (800 rows each) for student-specific stressors (academic pressure, work pressure, relationships, CGPA/money, extreme depression/anxiety/love)
+
+## Dataset facts
+
+| Attribute | Value |
+|-----------|-------|
+| Total samples | 190,000 |
+| Languages | English (90k), Bangla (100k) |
+| Unique labels | 17 |
+| Encoding | UTF-8 |
+| Balanced per file (equal EN/BN split except suicide_bangla_1000) | |
+
+## Schema
+
+```
+label,language,comment
+happy,english,"I am so happy today!"
+suicide,bangla,"আমার জীবন শেষ করতে চাই"
 ```
 
-Or run a single scraper directly:
-```bash
-python daraz/scrape.py
-python rokomari/scrape.py
-```
+Columns: `label` (str), `language` (str, `"english"` or `"bangla"`), `comment` (str).
 
-## Commands
-- `./run_all.sh --force` (or `--rescrape`) → sets `SCRAPE_FORCE=1`
-- `./run_all.sh --visible` → patches the scraper's `HEADLESS = False` via sed
-- `SCRAPE_FORCE=1 python daraz/scrape.py` — bypass CSV dedup per-URL skip
+## Key notes
 
-## Configuration (top of each `scrape.py`)
-- `HEADLESS = True` — `False` to watch the browser
-- `WAIT_TIME = 1` — seconds between actions
-- `MAX_PAGES_PER_PRODUCT` — Daraz=10, Rokomari=20 (different defaults)
-- `INTER_URL_DELAY = 0.5` — delay between different product URLs
-- `SCRAPE_FORCE=1` env var — re-scrape already-scraped URLs
-
-## CSS selectors are brittle
-When reviews stop being found, inspect (F12) and update:
-- **Daraz** (`daraz/scrape.py`): container `div.item`, text `div.content`, rating `div.star svg`, next `button.next-pagination-item.next`
-- **Rokomari** (`rokomari/scrape.py`): fallback selector lists at top of file — add new matches to each list
-
-## Architecture notes
-- Scrapers import `_common.py` via `sys.path.insert(0, ...)` from their subdirectory — replicating this is required for new scrapers
-- Browser launched with stealth args: `--disable-blink-features=AutomationControlled` and `--lang=bn-BD`
-- Dataset CSVs use **UTF-8 BOM** encoding (`utf-8-sig`)
-
-## Dedup
-- Existing CSV rows are read by `text` column; new rows with duplicate `text` are skipped
-- In-memory dedup per product across pagination pages (detects stale "Next" clicks via `seen_texts` set)
+- **Synthetic data** — not real human utterances. For research/prototyping only, not clinical use.
+- No PII present.
+- Suicide-related content included for academic research.
+- No code, scripts, notebooks, or config files exist in this repo.
+- Git tracks only the CSV data + README + AGENTS.md.
